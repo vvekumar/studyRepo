@@ -13,16 +13,17 @@ Instantiating a node
 n5=Node(8,None)
 Instantiating a node
 n6=Node(14,None)
+
 Instantiating a node
 
 
 # Create List
-#  L.append(n1)
-# L.append(n2)
-# L.append(n3)
-# L.append(n4)
-# L.append(n5)
-# L.append(n6)
+L.append(n1)
+L.append(n2)
+L.append(n3)
+L.append(n4)
+L.append(n5)
+L.append(n6)
 
 
 # Show List Items
@@ -32,6 +33,7 @@ L.show_items()
 """
 
 import copy
+
 
 class Node:
   def __init__(self, data, next_node):
@@ -84,6 +86,7 @@ class List:
       self.root = Node(None, None)
       return root
     return node  # popped node
+
 
   def show_items(self):
     node = self.root
